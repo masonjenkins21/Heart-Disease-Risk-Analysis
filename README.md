@@ -1,6 +1,3 @@
-# Heart-Disease-Risk-Analysis
-Analysis of the relationship between physical activity and heart disease risk using CDC BRFSS data, SQL, Python, and logistic regression.
-
 # Physical Activity and Heart Disease Risk Analysis
 
 ## Project Overview
@@ -19,13 +16,13 @@ Because HeartDisease is a binary outcome (Yes/No), the project was framed as a b
 
 ## Tools and Technologies
 
-* PostgreSQL
-* DBeaver
-* Python
-* Pandas
-* Scikit-learn
-* Matplotlib
-* Seaborn
+- PostgreSQL  
+- DBeaver  
+- Python  
+- Pandas  
+- Scikit-learn  
+- Matplotlib  
+- Seaborn  
 
 ## Data Preparation
 
@@ -33,11 +30,11 @@ The dataset was imported into PostgreSQL and explored using SQL queries.
 
 Data preparation included:
 
-* Removing records containing missing values
-* Selecting variables relevant to the research question
-* Converting HeartDisease and PhysicalActivity into binary variables (1/0)
-* Applying one-hot encoding to categorical variables
-* Splitting the data into training and testing datasets
+- Removing records containing missing values  
+- Selecting variables relevant to the research question  
+- Converting HeartDisease and PhysicalActivity into binary variables (1/0)  
+- Applying one-hot encoding to categorical variables  
+- Splitting the data into training and testing datasets  
 
 ## Methodology
 
@@ -45,34 +42,34 @@ A logistic regression model was developed to evaluate whether physical activity 
 
 Model evaluation included:
 
-* Train-test split (80/20)
-* Confusion Matrix
-* Classification Report
-* ROC Curve
-* ROC-AUC Score
+- Train-test split (80/20)  
+- Confusion Matrix  
+- Classification Report  
+- ROC Curve  
+- ROC-AUC Score  
 
 ## Results
 
 ### Confusion Matrix
 
 | Actual / Predicted | No Heart Disease | Heart Disease |
-| ------------------ | ---------------- | ------------- |
-| No Heart Disease   | 58,042           | 325           |
-| Heart Disease      | 5,278            | 314           |
+|--------------------|------------------|--------------|
+| No Heart Disease   | 58,042           | 325          |
+| Heart Disease      | 5,278            | 314          |
 
 ### Classification Metrics
 
-* Accuracy: 0.91
-* Precision (Heart Disease): 0.49
-* Recall (Heart Disease): 0.06
-* F1 Score (Heart Disease): 0.10
-* ROC-AUC: 0.82
+- Accuracy: 0.91  
+- Precision (Heart Disease): 0.49  
+- Recall (Heart Disease): 0.06  
+- F1 Score (Heart Disease): 0.10  
+- ROC-AUC: 0.82  
 
 ### Physical Activity Coefficient
 
-* Coefficient: -0.04
+- Coefficient: -0.04  
 
-The model achieved an ROC-AUC score of 0.82, exceeding the project benchmark of 0.70 and demonstrating good class-separation ability.
+The model achieved an ROC-AUC score of 0.82, exceeding the project benchmark of 0.70.
 
 The negative coefficient for PhysicalActivity indicates that engaging in physical activity was associated with a lower predicted likelihood of heart disease after controlling for other variables.
 
@@ -84,28 +81,26 @@ A Seaborn bar chart was used to compare heart disease rates between individuals 
 
 ### ROC Curve
 
-A Matplotlib ROC curve was used to evaluate the model's classification performance and visualize the ROC-AUC score.
+A Matplotlib ROC curve was used to evaluate model performance and visualize the ROC-AUC score.
 
 ## Conclusion
 
 The analysis supports the hypothesis that physical activity is associated with a reduced likelihood of heart disease.
 
-Although the model struggled to identify all positive heart disease cases due to class imbalance, it demonstrated strong overall discrimination with an ROC-AUC score of 0.82.
+Although the model struggled to identify all positive cases due to class imbalance, it demonstrated strong overall discrimination with an ROC-AUC score of 0.82.
 
-These findings suggest that physical activity may be an important modifiable risk factor and support the use of preventive health initiatives aimed at increasing physical activity levels.
+These findings suggest that physical activity is an important modifiable risk factor and supports preventive health initiatives aimed at increasing physical activity levels.
 
 ## Repository Contents
 
-* SQL scripts used for exploratory data analysis and preprocessing
-* Python code used for modeling and evaluation
-* Model outputs and performance metrics
-* Visualizations
-* Project report
+- SQL scripts used for exploratory data analysis and preprocessing  
+- Python code used for modeling and evaluation  
+- Model outputs and performance metrics  
+- Visualizations  
+- Project report  
 
 ## References
 
 Centers for Disease Control and Prevention. (n.d.). Behavioral Risk Factor Surveillance System (BRFSS). https://www.cdc.gov/brfss/index.html
 
 Kamil Pytlak. (n.d.). Personal key indicators of heart disease [Data set]. Kaggle. https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease
-
-
