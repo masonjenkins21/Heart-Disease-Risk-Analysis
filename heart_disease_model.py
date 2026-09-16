@@ -13,7 +13,7 @@ from sklearn.metrics import(
      roc_curve
 )
 
-df = pd.read_csv("heart_disease_data.csv")
+df = pd.read_csv("heart_disease_data_cleaned.csv")
 
 
 

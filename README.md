@@ -4,7 +4,7 @@
 
 ### Research Question
 
-To what extent does physical activity influence the risk of heart disease after controlling for demographic, lifestyle, and health-related factors?
+To what extent is physical activity associated with heart disease risk after controlling for demographic, lifestyle, and health-related factors?
 
 Heart disease remains a leading cause of death in the United States. This project evaluates whether physical activity is associated with a reduced likelihood of heart disease using data from the CDC Behavioral Risk Factor Surveillance System (BRFSS).
 
@@ -89,7 +89,7 @@ The analysis supports the hypothesis that physical activity is associated with a
 
 Although the model struggled to identify all positive cases due to class imbalance, it demonstrated strong overall discrimination with an ROC-AUC score of 0.82.
 
-These findings suggest that physical activity is an important modifiable risk factor and supports preventive health initiatives aimed at increasing physical activity levels.
+These findings are consistent with an association between physical activity and lower reported heart disease risk after accounting for the included demographic, lifestyle, and health-related variables. Because the analysis uses observational BRFSS data, the results should not be interpreted as establishing a causal effect.
 
 ## Repository Contents
 
@@ -97,7 +97,6 @@ These findings suggest that physical activity is an important modifiable risk fa
 - Python code used for modeling and evaluation  
 - Model outputs and performance metrics  
 - Visualizations  
-- Project report  
 
 ## References
 
